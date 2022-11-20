@@ -1,0 +1,55 @@
+.title {
+    text-align: center;
+    color: orangered;
+}
+
+.ustbar {
+    text-align: center;
+    background-color: dimgrey;
+    margin: 25px;
+    padding: 10px;
+}
+
+#topbar {
+    color: coral;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ortabar {
+    text-align: center;
+    color: dimgray;
+    margin: 25px;
+    padding: 10px;
+}
+
+.altbar {
+    text-align: center;
+    color: chocolate;
+    list-style-position: inside;
+    margin: 25px;
+    padding: 10px;
+}
+
+#calgilar{
+    color: mediumblue;
+}
+
+#copyright {
+    text-align: center;
+    background-color: darkgrey;
+    padding: 10px;
+}
+
+.socialmedia {
+    color: mediumblue;
+    padding: 10px;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
