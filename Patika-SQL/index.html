@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL</title>
+</head>
+<body>
+    <h1>PATİKA SQL ÖDEVLER</h1>
+    <ol>
+        <li>
+            <div>
+                <ul>
+                    <li>film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.</li>
+                    <li>SELECT title, description FROM film;</li>
+                </ul>
+                <br>
+                <ul>
+                    <li>film tablosunda bulunan tüm sütunlardaki verileri film uzunluğu (length) 60 dan büyük VE 75 ten küçük olma koşullarıyla sıralayınız.</li>
+                    <li>SELECT * FROM film WHERE 60 < length AND length < 75;</li>
+                </ul>
+                <br>
+                <ul>
+                    <li>film tablosunda bulunan tüm sütunlardaki verileri rental_rate 0.99 VE replacement_cost 12.99 VEYA 28.99 olma koşullarıyla sıralayınız.</li>
+                    <li>SELECT * FROM film WHERE rental_rate = 0.99 AND replacement_cost = 12.99 OR replacement_cost = 28.99;</li>
+                </ul>
+                <br>
+                <ul>
+                    <li>customer tablosunda bulunan first_name sütunundaki değeri 'Mary' olan müşterinin last_name sütunundaki değeri nedir?</li>
+                    <li>SELECT first_name, last_name FROM customer WHERE first_name = 'Mary';</li>
+                    <img src="odev1soru4.png" width="220" height="250">
+                </ul>
+                <br>
+                <ul>
+                    <li>film tablosundaki uzunluğu(length) 50 ten büyük OLMAYIP aynı zamanda rental_rate değeri 2.99 veya 4.99 OLMAYAN verileri sıralayınız.</li>
+                    <li>SELECT * FROM film WHERE NOT 50 < length AND rental_rate = 2.99 OR rental_rate = 4.99;</li>
+                </ul>
+            </div>
+        </li>
+    </ol>
+    
+</body>
+</html>
