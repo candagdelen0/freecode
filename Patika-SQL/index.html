@@ -129,6 +129,24 @@
             </div>
         </li>
         <hr>
+        <li>
+            <div>
+                <ul>
+                    <li>film tablosunda bulunan filmleri rating değerlerine göre gruplayınız.</li>
+                    <li><em>SELECT rating FROM film GROUP BY rating;</em></li>
+                    <br>
+                    <li>film tablosunda bulunan filmleri replacement_cost sütununa göre grupladığımızda<br>film sayısı 50 den fazla olan replacement_cost değerini ve karşılık gelen film sayısını sıralayınız.</li>
+                    <li><em>SELECT replacement_cost,COUNT(*) FROM film GROUP BY replacement_cost HAVING COUNT(*) > 50;</em></li>
+                    <br>
+                    <li>customer tablosunda bulunan store_id değerlerine karşılık gelen müşteri sayılarını nelerdir? </li>
+                    <li><em>SELECT store_id,COUNT(customer_id) FROM customer GROUP BY store_id;</em></li>
+                    <br>
+                    <li>city tablosunda bulunan şehir verilerini country_id sütununa göre gruplandırdıktan sonra <br>en fazla şehir sayısı barındıran country_id bilgisini ve şehir sayısını paylaşınız.</li>
+                    <li><em>SELECT country_id,COUNT(country_id) FROM city GROUP BY country_id  ORDER BY COUNT(country_id) DESCLIMIT 1;</em></li>
+                </ul>
+            </div>
+        </li>
+        <hr>
     </ol>
     
 </body>
