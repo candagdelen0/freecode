@@ -154,7 +154,7 @@
                     <li><em>CREATE TABLE IF NOT EXISTS employee(id INTEGER,name VARCHAR(50),birthday DATE,email VARCHAR(100));</em></li>
                     <br>
                     <li>Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.</li>
-                    <li><em>
+                    <li><em><pre>
                         insert into employee (name, birthday, email) values ('Aloin', '8/4/2047', 'apickthorne0@npr.org');
                         insert into employee (name, birthday, email) values ('Chad', '8/30/2048', 'cchiene1@zdnet.com');
                         insert into employee (name, birthday, email) values ('Emmery', '6/1/2040', 'ekeeling2@skyrock.com');
@@ -205,28 +205,29 @@
                         insert into employee (name, birthday, email) values ('Lyndell', '8/3/2041', 'lgrossier1b@dailymotion.com');
                         insert into employee (name, birthday, email) values ('Gael', '6/18/2032', 'goxenham1c@mit.edu');
                         insert into employee (name, birthday, email) values ('Brittaney', '6/27/2023', 'bshoard1d@addtoany.com');
-                    </em></li>
+                    </pre></em></li>
                     <br>
                     <li>Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.</li>
-                    <li><em>
+                    <li><em><pre>
                         UPDATE employee SET name = 'Can' WHERE name LIKE 'C%' RETURNING *;
                         UPDATE employee SET name = 'Horseman' WHERE id = 7 RETURNING *;
                         UPDATE employee SET email = NULL WHERE id > 45 RETURNING *;
                         UPDATE employee SET email = 'horse@horseman.com' WHERE name LIKE '%a' RETURNING *;
                         UPDATE employee SET birthday = NULL WHERE id = '25' RETURNING *;
-                    </em></li>
+                    </pre></em></li>
                     <br>
                     <li>Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.</li>
-                    <li><em>
+                    <li><em><pre>
                         DELETE FROM employee WHERE id > 41 RETURNING*;
                         DELETE FROM employee WHERE birthday IS NULL RETURNING*;
                         DELETE FROM employee WHERE birthday >= '1/1/2040' RETURNING*;
                         DELETE FROM employee WHERE email IS NULL RETURNING*;
                         DELETE FROM employee WHERE name = 'Cam' RETURNING*;
-                    </em></li>
+                    </pre></em></li>
                 </ul>
             </div>
         </li>
+        <hr>
     </ol>
     
 </body>
