@@ -244,6 +244,20 @@
             </div>
         </li>
         <hr>
+        <li>
+            <div>
+                <ul>
+                    <li>city tablosu ile country tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz LEFT JOIN sorgusunu yazınız.</li>
+                    <li><em>SELECT city,country FROM country LEFT JOIN city ON city.country_id = country.country_id;</em></li>
+                    <br>
+                    <li>customer tablosu ile payment tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz RIGHT JOIN sorgusunu yazınız.</li>
+                    <li><em>SELECT payment_id, first_name, last_name FROM payment RIGHT JOIN customer ON customer.customer_id = payment.customer_id;</em></li>
+                    <br>
+                    <li>customer tablosu ile rental tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz FULL JOIN sorgusunu yazınız.</li>
+                    <li><em>SELECT rental_id, first_name, last_name FROM payment FULL JOIN customer ON customer.customer_id = rental.customer_id;</em></li>
+                </ul>
+            </div>
+        </li>
     </ol>
     
 </body>
